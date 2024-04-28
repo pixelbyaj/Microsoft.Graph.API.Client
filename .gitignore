@@ -8,3 +8,6 @@
 /EmailDemoApp/bin/Debug/net6.0
 /EmailDemoApp/obj
 /EmailDemoApp/appsettings.Development.json
+/src/bin/Debug/net6.0
+/src/obj
+/src/.vs/Microsoft.Graph.API.Client
