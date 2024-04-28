@@ -7,8 +7,9 @@ var settings = EmailApp.Settings.LoadSettings();
 
 
 IAuthenticationProvider authenticationProvider = new AuthenticationInteractiveProvider(settings);
-//IAuthenticationProvider authenticationProvider = new AuthenticationClientSecretProvider(settings);
 var user = await authenticationProvider.GetUserProfile(null);
+//IAuthenticationProvider authenticationProvider = new AuthenticationClientSecretProvider(settings);
+//var user = await authenticationProvider.GetUserProfile(settings.UserEmail);
 
 Console.WriteLine($"Hello, {user?.UserPrincipalName}");
 
