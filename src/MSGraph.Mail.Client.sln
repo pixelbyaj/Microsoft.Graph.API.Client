@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Graph.Mail.Client", "Microsoft.Graph.Mail.Client.csproj", "{43CF5FA4-EDC3-424F-9706-80F6067C199A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSGraph.Mail.Client", "MSGraph.Mail.Client.csproj", "{43CF5FA4-EDC3-424F-9706-80F6067C199A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailApp", "..\EmailDemoApp\EmailDemoApp.csproj", "{BADBF174-1A02-433A-9693-93E03F329C1A}"
 EndProject

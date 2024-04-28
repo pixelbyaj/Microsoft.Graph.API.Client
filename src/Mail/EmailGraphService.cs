@@ -1,9 +1,10 @@
-﻿using Microsoft.Graph.Models;
+﻿using Microsoft.Graph;
+using Microsoft.Graph.Models;
 using Microsoft.Graph.Users.Item.SendMail;
-using Microsoft.Graph.Mail.Client.Authentications;
-using Microsoft.Graph.Mail.Client.Models;
+using MSGraph.Mail.Client.Authentications;
+using MSGraph.Mail.Client.Models;
 
-namespace Microsoft.Graph.Mail.Client
+namespace MSGraph.Mail.Client
 {
     public class EmailGraphService : IEmailGraphService, IDisposable
     {

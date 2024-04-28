@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Graph.Mail.Client.Models
+﻿namespace MSGraph.Mail.Client.Models
 {
     public class Settings
     {

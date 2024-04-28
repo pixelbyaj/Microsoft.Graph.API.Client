@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Microsoft.Graph.Mail.Client.csproj" />
+    <ProjectReference Include="..\src\MSGraph.Mail.Client.csproj" />
   </ItemGroup>
 
   <ItemGroup>

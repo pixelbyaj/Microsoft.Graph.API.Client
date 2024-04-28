@@ -7,8 +7,8 @@ Integrate the [Microsoft Graph API](https://graph.microsoft.com) into your .NET 
 
 To install the client library via NuGet:
 
-* Search for `Microsoft.Graph.Mail.Client` in the NuGet Library, or
-* Type `Install-Package Microsoft.Graph.Mail.Client` into the Package Manager Console.
+* Search for `MSGraph.Mail.Client` in the NuGet Library, or
+* Type `Install-Package MSGraph.Mail.Client` into the Package Manager Console.
 
 ## Getting started
 

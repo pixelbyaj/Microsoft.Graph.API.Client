@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Microsoft.Graph.Mail.Client;
-using Microsoft.Graph.Mail.Client.Authentications;
-using Microsoft.Graph.Mail.Client.Models;
+using MSGraph.Mail.Client;
+using MSGraph.Mail.Client.Authentications;
+using MSGraph.Mail.Client.Models;
 
 var settings = EmailApp.Settings.LoadSettings();
 
@@ -93,7 +93,7 @@ async Task SendMailAsync()
 
 async Task ListInboxAsync()
 {
-    var messages = await emailGraphService.GetEmailsAsync(2, -1, new Microsoft.Graph.Mail.Client.Models.EmailRequestParameterInformation
+    var messages = await emailGraphService.GetEmailsAsync(2, -1, new MSGraph.Mail.Client.Models.EmailRequestParameterInformation
     {
         IsRead = false,
         IncludeAttachments = true,

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Microsoft.Graph.Mail.Client.Models
+namespace MSGraph.Mail.Client.Models
 {
     public class EmailOrderby
     {

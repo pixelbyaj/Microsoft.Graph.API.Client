@@ -1,8 +1,8 @@
 ﻿using Microsoft.Graph;
 using Microsoft.Graph.Models;
-using Microsoft.Graph.Mail.Client.Models;
+using MSGraph.Mail.Client.Models;
 
-namespace Microsoft.Graph.Mail.Client.Authentications
+namespace MSGraph.Mail.Client.Authentications
 {
     public abstract class AuthenticationProvider : IAuthenticationProvider, IDisposable
     {
