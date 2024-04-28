@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Microsoft Graph Mail API Client</Title>
+    <Authors>Abhishek Joshi</Authors>
+    <Description>The Microsoft Graph .NET Mail Client Library targets .Net 6.0.</Description>
+    <Copyright>Abhishek Joshi</Copyright>
+    <PackageProjectUrl>https://github.com/pixelbyaj/Microsoft.Graph.API.Client</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/pixelbyaj/Microsoft.Graph.API.Client</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.10.4" />
+    <PackageReference Include="Microsoft.Graph" Version="5.50.0" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.58.1" />
+  </ItemGroup>
+
+</Project>

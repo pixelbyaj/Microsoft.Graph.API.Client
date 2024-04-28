@@ -1,9 +1,9 @@
 ﻿using Microsoft.Graph.Models;
 using Microsoft.Graph.Users.Item.SendMail;
-using Microsoft.Graph.API.Client.Authentications;
-using Microsoft.Graph.API.Client.Models;
+using Microsoft.Graph.Mail.Client.Authentications;
+using Microsoft.Graph.Mail.Client.Models;
 
-namespace Microsoft.Graph.API.Client.Mail
+namespace Microsoft.Graph.Mail.Client
 {
     public class EmailGraphService : IEmailGraphService, IDisposable
     {
@@ -47,7 +47,7 @@ namespace Microsoft.Graph.API.Client.Mail
                     .GetAsync((requestConfiguration) =>
                     {
                         requestConfiguration.QueryParameters.Top = top;
-                        string emailFilter = GetEmailFilter(requestInformation);
+                        string? emailFilter = GetEmailFilter(requestInformation);
                         if (!string.IsNullOrEmpty(emailFilter))
                         {
                             requestConfiguration.QueryParameters.Filter = emailFilter;
@@ -110,6 +110,7 @@ namespace Microsoft.Graph.API.Client.Mail
                             if (emailOrderby != null && emailOrderby.Any())
                             {
                                 requestConfiguration.QueryParameters.Orderby = emailOrderby.ToArray();
+                                requestConfiguration.QueryParameters.top
                             }
                         }
                     });
@@ -319,7 +320,7 @@ namespace Microsoft.Graph.API.Client.Mail
             return emailMessages;
         }
 
-        private static string GetEmailFilter(EmailRequestParameterInformation? requestInformation)
+        private static string? GetEmailFilter(EmailRequestParameterInformation? requestInformation)
         {
             string? emailFilter = string.Empty;
 

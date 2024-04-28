@@ -2,7 +2,7 @@
 
 namespace EmailApp
 {
-    public class Settings : Microsoft.Graph.API.Client.Models.Settings
+    public class Settings : Microsoft.Graph.Mail.Client.Models.Settings
     {
         public static Settings LoadSettings()
         {

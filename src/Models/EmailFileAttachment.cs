@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Graph.API.Client.Models
+﻿namespace Microsoft.Graph.Mail.Client.Models
 {
     public class EmailFileAttachment
     {

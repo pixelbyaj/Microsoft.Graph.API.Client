@@ -1,6 +1,6 @@
-﻿using Microsoft.Graph.API.Client.Models;
+﻿using Microsoft.Graph.Mail.Client.Models;
 
-namespace Microsoft.Graph.API.Client
+namespace Microsoft.Graph.Mail.Client
 {
     public interface IEmailGraphService
     {

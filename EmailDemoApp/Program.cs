@@ -1,10 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Microsoft.Graph.API.Client;
-using Microsoft.Graph.API.Client.Authentications;
-using Microsoft.Graph.API.Client.Mail;
-using Microsoft.Graph.API.Client.Models;
+using Microsoft.Graph.Mail.Client;
+using Microsoft.Graph.Mail.Client.Authentications;
+using Microsoft.Graph.Mail.Client.Models;
 
 var settings = EmailApp.Settings.LoadSettings();
+
 
 IAuthenticationProvider authenticationProvider = new AuthenticationInteractiveProvider(settings);
 //IAuthenticationProvider authenticationProvider = new AuthenticationClientSecretProvider(settings);
@@ -41,7 +41,7 @@ while (choice != 0)
             break;
         case 1:
             // List emails from user's inbox
-             await ListInboxAsync();
+            await ListInboxAsync();
             break;
         case 2:
             // Send an email message
@@ -92,12 +92,12 @@ async Task SendMailAsync()
 
 async Task ListInboxAsync()
 {
-   var messages = await emailGraphService.GetEmailsAsync(2,-1, new Microsoft.Graph.API.Client.Models.EmailRequestParameterInformation
-   {
-       IsRead = false,
-       IncludeAttachments = true,
-   });
-    foreach(var message in messages)
+    var messages = await emailGraphService.GetEmailsAsync(2, -1, new Microsoft.Graph.Mail.Client.Models.EmailRequestParameterInformation
+    {
+        IsRead = false,
+        IncludeAttachments = true,
+    });
+    foreach (var message in messages)
     {
         Console.WriteLine(message.From);
         Console.WriteLine(string.Join(", ", message.ToRecipients));

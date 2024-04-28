@@ -1,8 +1,8 @@
 ﻿using Azure.Identity;
 using Microsoft.Graph;
-using Microsoft.Graph.API.Client.Models;
+using Microsoft.Graph.Mail.Client.Models;
 
-namespace Microsoft.Graph.API.Client.Authentications
+namespace Microsoft.Graph.Mail.Client.Authentications
 {
     public class AuthenticationInteractiveProvider : AuthenticationProvider
     {

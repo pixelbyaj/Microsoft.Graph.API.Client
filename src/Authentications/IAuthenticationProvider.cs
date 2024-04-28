@@ -1,6 +1,6 @@
 ﻿using Microsoft.Graph;
 
-namespace Microsoft.Graph.API.Client.Authentications
+namespace Microsoft.Graph.Mail.Client.Authentications
 {
     public interface IAuthenticationProvider : IDisposable
     {

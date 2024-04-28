@@ -1,13 +1,11 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
-
 /.vs
-/bin/Debug/net6.0
-/obj
-/EmailDemoApp/bin/Debug/net6.0
+/EmailDemoApp/bin
 /EmailDemoApp/obj
-/EmailDemoApp/appsettings.Development.json
-/src/bin/Debug/net6.0
+/src/bin
 /src/obj
-/src/.vs/Microsoft.Graph.API.Client
+/src/.vs
+/nuget.ps1
+/EmailDemoApp/appsettings.Development.json
