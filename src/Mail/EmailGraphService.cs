@@ -110,7 +110,6 @@ namespace Microsoft.Graph.Mail.Client
                             if (emailOrderby != null && emailOrderby.Any())
                             {
                                 requestConfiguration.QueryParameters.Orderby = emailOrderby.ToArray();
-                                requestConfiguration.QueryParameters.top
                             }
                         }
                     });
