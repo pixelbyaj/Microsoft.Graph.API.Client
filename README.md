@@ -1,6 +1,9 @@
 # Microsoft Graph .NET Client Library For Mail
 
+[![NuGet Downloads](https://img.shields.io/nuget/dt/msgraph.mail.client)](https://www.nuget.org/packages/MSGraph.mail.client)
+
 The Microsoft Graph .NET Mail Client Library targets .Net 6.0.
+
 
 Integrate the [Microsoft Graph API](https://graph.microsoft.com) into your .NET project!
 ## Installation via NuGet
