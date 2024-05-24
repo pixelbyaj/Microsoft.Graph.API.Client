@@ -286,6 +286,10 @@ namespace MSGraph.Mail.Client
                     {
                         Id = message.Id,
                         InternetMessageId = message.InternetMessageId,
+                        Subject = message.Subject,
+                        BodyContent = message.Body?.Content,
+                        BodyPreview = message.BodyPreview,
+                        BodyType = message.Body?.ContentType == BodyType.Html ? EmailBodyType.Html : EmailBodyType.Text,
                         From = message.From?.EmailAddress?.Address,
                         ToRecipients = message.ToRecipients?.Select(t => t.EmailAddress?.Address).ToList(),
                         CcRecipients = message.CcRecipients?.Select(c => c.EmailAddress?.Address).ToList(),

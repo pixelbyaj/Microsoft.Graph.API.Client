@@ -16,9 +16,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Azure.Identity" Version="1.10.4" />
-    <PackageReference Include="Microsoft.Graph" Version="5.50.0" />
-    <PackageReference Include="Microsoft.Identity.Client" Version="4.58.1" />
+    <PackageReference Include="Azure.Identity" Version="1.11.3" />
+    <PackageReference Include="Microsoft.Graph" Version="5.54.0" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.61.1" />
   </ItemGroup>
 
 </Project>
