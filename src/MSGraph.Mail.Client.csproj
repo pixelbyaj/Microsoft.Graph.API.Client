@@ -10,6 +10,7 @@
     <Authors>Abhishek Joshi</Authors>
     <Description>The Microsoft Graph .NET Mail Client Library targets .Net 6.0.</Description>
     <Copyright>Abhishek Joshi</Copyright>
+    <Version>1.1.0</Version>
     <PackageProjectUrl>https://github.com/pixelbyaj/Microsoft.Graph.API.Client</PackageProjectUrl>
     <RepositoryUrl>https://github.com/pixelbyaj/Microsoft.Graph.API.Client</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
