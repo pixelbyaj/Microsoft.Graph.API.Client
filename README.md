@@ -36,13 +36,13 @@ Install-Package MSGraph.Mail.Client
 
 6. Select **Register**. On the application's Overview page, copy the value of the **Application (client) ID** and save it. You will need it in the next step. If you chose **Accounts in this organizational directory only** for Supported account types, also copy the **Directory (tenant) ID** and save it.
 
-![Application Registration](./assets/image.png)
+![Application Registration](https://raw.githubusercontent.com/pixelbyaj/Microsoft.Graph.API.Client/refs/heads/main/assets/image-1.png)
 
 **Note:** If you want to use it for your personal email account like outlook.com or live.in, use `tenantId` as **consumer**.
 
 7. Select **Authentication** under Manage. Locate the **Advanced settings** section and change the **Allow public client flows** toggle to **Yes**, then choose **Save**.
 
-![Allow Public Client Flows](./assets/image-1.png)
+![Allow Public Client Flows](https://raw.githubusercontent.com/pixelbyaj/Microsoft.Graph.API.Client/refs/heads/main/assets/image-1.png)
 
 ### 2. Create a Microsoft Graph mail client object with an authentication provider
 
